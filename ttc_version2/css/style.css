@@ -1,0 +1,196 @@
+
+
+/*--- General site layout + default styling ---*/
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex; /* Vertical layout of main elements */
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5; /* Make default line height more accessible */
+    font-family: sans-serif; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header, main {
+    width: 100%;
+    max-width: 2060px;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: white;
+}
+
+header {
+    border-bottom: 1px solid grey;
+    margin-bottom: 0em;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #d4d4d4;
+    align-self: stretch;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h1{
+    color:#000000;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 26pt;
+    font-weight: bold;
+}
+
+h2{
+    color:rgb(26 61 109);
+    font-size: 20pt;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+h3{
+    color: rgb(32 41 69);
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    font-weight: normal;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 18pt;
+}
+
+table caption.h4,
+caption.h4{
+    color: rgb(32 41 69) !important;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    font-weight: normal;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 18pt;
+}
+
+p {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+.regular-text{
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    font-size: 11pt;
+    color:#000000;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    min-height: 7em;
+}
+
+.site-logo {
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation-link {
+    color: #374d94;
+    padding: 0.7em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation-link:hover {
+    color: #6484ef;
+}
+
+/* Table styling */
+
+table {
+    margin: 2em 0;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #eaebf5;
+}
+
+th, td {
+    border: 1px solid #d7d7d7;
+    padding: 0.5em 0.8em;
+    text-align: left;
+}
+
+
+/* Form styling */
+
+form {
+    max-width: 40em;
+    border: 1px solid #e5e5e5;
+    /* background-color: #f3f3f3; */
+    padding: 1.5em;
+    margin: 2em 0;
+}
+
+
+label {
+    font-size: 0.9em;
+}
+
+input[type='text'], input[type='email'], textarea {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b3b3b3;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.3em;
+}
+
+input[type='radio'] {
+    display: inline;
+    margin-right: 0.5em;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type='submit'] {
+    width: auto;
+    padding: 0.5em 2em;
+    background-color: #1e3da3;
+    color: white;
+    border-style: none;
+    border-radius: 0.3em;
+    margin: 1.5em 0 0 0;
+}
+
+.form-header {
+    margin-top: 0;
+}
+
+.form-description {
+    margin-bottom: 1.5em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
